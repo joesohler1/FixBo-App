@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixBo - Bidding Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--=======HEADER=======-->
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="header-items">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="site-name">
+                <h2><a href="index.html">FixBo</a></h2>
+            </div>
+            <nav class="nav">
+                <ul class="menu-list">
+                    <li><a href="index.html">Post a Job</a></li>
+                    <li><a href="bidding-room.html">Bidding Room</a></li>
+                    <li><a href="job-status.html">Job Status</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div class="header-buttons">
+            <button class="login">Login</button>
+            <button class="sign-up">Sign Up</button>    
+        </div>
+    </header>
+    <div>
+        <ul class="mobile-menu-list">
+            <li><a href="index.html">Post a Job</a></li>
+            <li><a href="bidding-room.html">Bidding Room</a></li>
+            <li><a href="job-status.html">Job Status</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <!--=======BIDDING ROOM=======-->
+    <main>
+        <h1 class="page-tagline">Bidding Room</h1>
+        <div id="job-list" class="job-list">
+            <div class="job-card-placeholder">
+                <p>No jobs posted. Want to post a job?</p>
+                <a href="index.html" class="post-job-redirect-btn">Post a Job</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="menu.js"></script>
+    <script src="jobStore.js"></script>
+    <script src="bidding-room.js"></script>
+</body>
+
+<footer class="footer">
+    <p>All rights reserved to Nova Code LLC</p>
+</footer>
+</html>

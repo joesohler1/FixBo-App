@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixBo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"></head>
+<body>
+    <!--=======HEADER=======-->
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="header-items">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="site-name">
+                <h2><a href="index.html">FixBo</a></h2>
+            </div>
+            <nav class="nav">
+                <!--List for larger screens-->
+                <ul class="menu-list">
+                    <li><a href="index.html">Post a Job</a></li>
+                    <li><a href="bidding-room.html">Bidding Room</a></li>
+                    <li><a href="job-status.html">Job Status</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div class="header-buttons">
+            <button class="login">Login</button>
+            <button class="sign-up">Sign Up</button>    
+        </div>
+    </header>
+    <div>
+        <!--Menu for smaller screens-->
+        <ul class="mobile-menu-list">
+            <li><a href="index.html">Post a Job</a></li>
+            <li><a href="bidding-room.html">Bidding Room</a></li>
+            <li><a href="job-status.html">Job Status</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <!--=======HEADER END========-->
+
+    <!--=======BEGINNING OF PAGE DESIGN=======-->
+    <main>
+        <h1 class="page-tagline">FixBo is your fix all</h1>
+        <div class="instructions">
+            <div class="step-1">
+                <h2>1. Take A Picture</h2>
+                <p class="instructions-p">To give the handyman some context, use your camera to take a picture of the job.</p>
+                <label for="imageInput" class="custom-upload-btn">Take A Picture</label>
+            </div>
+            <div class="step-2">
+                <h2>2. Give Your Job A Title & Description</h2>
+                <input type="text" id="step2-title" placeholder=" Title: Curtain Rods Hung " class="step2-input">
+                <textarea id="step2-description" placeholder=" Description: I have three windows that need curtain rods hung. Please Help! " class="step2-input"></textarea>            </div>
+            <div class="step-3">
+                <h2>3. Post A Job to The Bidding Room</h2>
+                <p class="instructions-p">Submit your job to the bidding room where professionals can offer to hang the curtain rods for what a fair compensation is.</p>
+                <p class="instructions-p">Joe: I can do that for $50!</p>
+                <button type="submit" class="post-job-btn-inst">Post Job</button>
+            </div>
+        </div>
+        <div class="page-layout">
+            <div class="submit-a-job">
+                <h2>Post A Job</h2>
+                <form id="job-form">
+                  <input type="text" name="job-title" id="job-title-input" placeholder="Job Title">
+                  <textarea name="job-description" id="job-description-input" placeholder="Job Description Here..."></textarea>
+                  <label for="imageInput" class="custom-upload-btn">Take A Picture</label>
+                  <input type="file" accept="image/*" capture="environment" id="imageInput" multiple style="display: none;">
+                  <div class="preview-container" id="preview-container">
+                    <div class="image-wrapper">
+                      <div class="placeholder">Upload Photo Here</div>
+                      <label for="imageInput" class="add-photo-btn">Add</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="post-job-btn">Post Job</button>
+                </form>
+            </div>
+    </main>
+
+    <script src="jobStore.js"></script>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <p>This is the footer. I'm testing it to see what it looks like on the page. All rights reserved to Nova Code LLC</p>
+</footer>
+</html>
